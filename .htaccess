@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+##
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# все страницы обращаются к файлу index.php
+RewriteRule . index.php
